@@ -1,0 +1,83 @@
+/* Additional styles can be added here if needed */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.background-svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://images.unsplash.com/photo-1564135624576-c5c88640f235?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 123, 255, 0.7); /* Transparent blue color for the header */
+  color: #fff;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Adding transparency */
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.payment-method {
+  flex: 1 1 200px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+  margin: 10px;
+  max-width: 200px;
+}
+
+.payment-method:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.payment-method img {
+  margin-bottom: 15px;
+  width: 70px;
+  height: 70px;
+}
+
+.payment-method p {
+  margin: 0;
+  color: #666;
+  font-size: 18px;
+}
